@@ -6,8 +6,6 @@ import UploadFile from "./UploadFile";
 
 import { useSelector } from "react-redux";
 
-import {FacebookShareButton,FacebookIcon} from "react-share";
-
 const UserFeed = ({ history }) => {
 	const [selectedImage, setSelectedImage] = useState(null);
 	const { user } = useSelector((state) => ({ ...state }));
@@ -29,7 +27,7 @@ const UserFeed = ({ history }) => {
 				<h2>Welcome</h2>
 			)}
 			<UploadFile />
-			
+
 			<ImageGrid
 				selectedImage={selectedImage}
 				setSelectedImage={setSelectedImage}
